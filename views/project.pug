@@ -20,9 +20,9 @@ block content
           li #{tech}
 
         if live_link
-          a.button_animation.button.expanded(href=`${live_link}`) Live Demo
+          a.button_animation.button.expanded(target='_blank', href=`${live_link}`) Live Demo
         if github_link
-          a.button_animation_next.button.expanded(href=`${github_link}`) GitHub Repo
+          a.button_animation_next.button.expanded(target='_blank', href=`${github_link}`) GitHub Repo
 
     each img in image_urls
       img.image_animation.image(src=`/static/${img}`)
